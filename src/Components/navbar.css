@@ -1,0 +1,44 @@
+@media screen and (max-width: 600px) {
+    .small{
+        font-size: 8px;
+    }
+}
+
+.hover-cont {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .hover-text {
+    visibility: hidden;
+    width: 100px;
+    background-color: #221f1f;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    padding: 5px;
+    bottom: -95%; /* Position the tooltip above the button */
+    left: 105%;
+    margin-left: -80px; /* Use half of the width (160px/2) to center the tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 15px;
+  }
+  
+  .hover-cont:hover .hover-text {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  @media screen and (max-width: 600px) {
+    .hover-text {
+        font-size: 10px;
+        width: 70px;
+        margin-left: -50px;
+        bottom: -40%;
+    }
+
+}

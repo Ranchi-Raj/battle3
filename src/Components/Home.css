@@ -1,0 +1,30 @@
+.fix{
+    position: fixed;
+    top:62px;
+  }
+  
+  .fix2{
+    position: relative;
+    top: 62px;
+    left: 18.66%;
+    width: 78.3%;
+  }
+  
+  .fix3{
+    position: relative;
+    top: 62px;
+    left: 24.9%;
+    width: 66.1%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .small{
+    font-size: 8px;
+  }
+
+  .text{
+    border: 5px solid black;
+    border-radius: 10px;
+    width: 200px;
+  }

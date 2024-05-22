@@ -112,8 +112,8 @@ export default function Network() {
 
   return (
     <div>
-       <div className='text-xs my-2 shadow-lg py-2'>
-      <nav className='flex justify-between'>
+       <div className='text-xs my-2 bg-white py-2'>
+      <nav className='flex justify-between fixed w-full'>
         <div className='lg:text-2xl md:text-xl sm:text-xs'>
           <Link to='/'>
             <button className='bg-violet-500 text-white p-1 rounded-md mx-2 sm:text-xs  md:text-xl lg:text-xl'><FaLinkedinIn /></button>
@@ -135,7 +135,7 @@ export default function Network() {
                 <span className='hover-text'>Messages</span>
               </div>
                 <button className='sm:text-xs md:text-xl lg:text-xl mx-2 hidden sm:visible xl:block hover:text-violet-800'>Get Premium</button>
-                <Link className=' rounded-full  mx-2 sm:text-xs  md:text-xl lg:text-2xl'><CgProfile/></Link>
+                <Link to='/profile' className='bg-yellow-500 h-3 sm:h-6  rounded-full  mx-2 sm:text-xs  md:text-xl lg:text-2xl'><CgProfile/></Link>
             </div>
         <div>
 
@@ -159,7 +159,7 @@ export default function Network() {
       </div>
       
       <div className='xl:hidden fix3 text-xs'>
-      <div className='text-3xl text-center my-4'>NETWORK</div>
+      <div className='text-3xl text-center mb-4'>NETWORK</div>
 
       {data.map((i) =>{
             return(

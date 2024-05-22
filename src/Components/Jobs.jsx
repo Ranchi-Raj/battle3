@@ -96,9 +96,9 @@ export default function Jobs() {
   }
 
   return (
-    <div><div className='text-xs my-2 shadow-lg py-2'>
-    <nav className='flex justify-between'>
-      <div className='lg:text-2xl md:text-xl sm:text-xs'>
+    <div><div className='text-xs my-2 py-2 fixed w-full'>
+    <nav className='flex justify-between '>
+      <div className='lg:text-2xl md:text-xl sm:text-xs'> 
         <Link to='/'>
           <button onClick={handle} className='bg-violet-500 text-white p-1 rounded-md mx-2 sm:text-xs  md:text-xl lg:text-xl'><FaLinkedinIn /></button>
           </Link>
@@ -119,7 +119,7 @@ export default function Jobs() {
               <span className='hover-text'>Messages</span>
             </div>
               <button className='sm:text-xs md:text-xl lg:text-xl mx-2 hidden sm:visible xl:block hover:text-violet-800'>Get Premium</button>
-              <Link className=' rounded-full  mx-2 sm:text-xs  md:text-xl lg:text-2xl'><CgProfile/></Link>
+              <Link to='/profile' className='bg-yellow-500 h-3 sm:h-6  rounded-full  mx-2 sm:text-xs  md:text-xl lg:text-2xl'><CgProfile/></Link>
           </div>
       <div>
 
@@ -131,7 +131,7 @@ export default function Jobs() {
       </div>
       
       <div className='hidden xl:block fix2'>
-      <div className='text-5xl text-center my-4'>JOBS</div>
+      <div className='text-5xl text-center mb-4'>JOBS</div>
 
         {jobs.map((i) => {
           return(
